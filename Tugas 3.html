@@ -1,0 +1,55 @@
+<!-- Arum Rahmawati - 120140085 -->
+<!-- Pemrograman Web RC - Tugas 3 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <meta name="description" content="DOM JS - Arum Rahmawati" />
+        <meta name="keywords" content="DOM JS, Arum, Rahmawati, Arum Rahmawati" />
+        <title>DOM JS - Arum Rahmawati</title>
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 800px;
+            margin:40px auto;
+            background-color: #7c826b;
+            font: 16px/28px arial, sans-serif;
+            padding: 20px;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div align="center">
+                <button onclick="tombol()">KLIK!</button><br>
+                <img src="arum.jpg" width="165" height="210" border-radius: 30%>
+            </div>
+
+            <h1 align="center" id="judul"></h1>
+
+            <div class="konten" id="kontak"> </div>
+            <div class="konten" id="tentang"></div>
+            <div class="konten" id="pendidikan"> </div>
+            <div class="konten" id="pengalaman"></div>
+          
+            <div class="warna">
+                <br>
+                <h3>Masukkan Saran Anda</h3>
+                <ul id="Detail"></ul>
+                <div class="mid">
+                    <input id="masukan" placeholder="Isi disini" type="text">
+                    <button id="input" onclick="note()">Tambah</button>
+                </div>
+            </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
+<!-- Memanipulasi DOM halaman sebuah website,
+        - membuat teks kedalam id/class html tertentu (innerHTML)
+        - membuat element html kedalam id/class html tertentu (createElement)
+        - membuat element yang dinamis berdasarkan event handler tertentu, contoh: button di click berubah halaman (onClick) -->
